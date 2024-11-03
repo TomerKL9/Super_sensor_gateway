@@ -1,0 +1,32 @@
+/dts-v1/;
+
+#include "am33xx.dtsi"
+#include "am335x-bone-common.dtsi"
+
+/ {
+
+	    gpio_device_humidity@0 {
+        compatible = "gpio_device_humidity";
+        pin = <67>; 
+        device-name = "gpio_char_device_humidity";
+        class-name = "gpio_class_humidity";
+    };
+
+    gpio_device_saltiness@0 {
+        compatible = "gpio_device_saltiness";
+        pin = <68>; 
+        device-name = "gpio_char_device_salt";
+        class-name = "gpio_class_saltiness";
+    };
+
+    gpio_device_light@0 {
+        compatible = "gpio_device_light";
+        pin = <44>; 
+        device-name = "gpio_char_device_light";
+        class-name = "gpio_class_light";
+    };
+    gpio_device_pump@0 {
+        compatible = "gpio_device_pump";
+        pin = <65>;        
+    };
+};
